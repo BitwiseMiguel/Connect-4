@@ -1,0 +1,11 @@
+# IDE configuration files
+.vscode/
+
+# Compiled source
+*.exe
+*.o
+*.a
+
+# Log files
+*.txt
+*.log
