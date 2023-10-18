@@ -370,4 +370,28 @@ void runBoardTests() {
         EQ_TEST(game.isBoardSymmetrical(), true, "Function isBoardSymmetrical Test 2");
     }
 
+    { // Function isBoardSymmetrical Test 3
+
+        Board game;
+
+        game.playMove(1); //player 1
+        game.playMove(1); //player 2
+        game.playMove(7); //player 1
+        game.playMove(7); //player 2
+        game.playMove(1); //player 1
+        game.playMove(1); //player 2
+        game.playMove(7); //player 1
+        game.playMove(7); //player 2
+        game.playMove(1); //player 1
+        game.playMove(1); //player 2
+        game.playMove(7); //player 1
+        game.playMove(7); //player 2
+        game.playMove(1); //player 2
+        game.playMove(2); //player 2
+        game.playMove(7); //player 2
+        game.playMove(6); //player 2
+
+        EQ_TEST(game.isBoardSymmetrical(), true, "Function isBoardSymmetrical Test 3");
+    }
+
 };
