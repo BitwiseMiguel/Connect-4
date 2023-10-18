@@ -4,6 +4,7 @@
 int main() {
 
     runBoardTests();
+    runHashMapTests();
 
     return 0;
 }
