@@ -179,7 +179,7 @@ auto Board::getColumn(const uint128_t &key, const int column) const {
     assertError(0 <= column, "Invalid column selection. The chosen column cannot be negative!");
     assertError(column < COLS_NUM, "Invalid column selection. The chosen column exceeds the maximum number of columns.");
     #endif
-    static const auto FULLCOLUMN{127ULL};
+    static const auto FULLCOLUMN{255ULL};
 
     return (uint64_t)(key >> (column * ROWS_NUM)) & FULLCOLUMN;
 }
